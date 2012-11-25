@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Start date:</b>
+  <%= @tournament.start_date %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @tournament.name %>
+</p>
+
+<p>
+  <b>Sponsor:</b>
+  <%= @tournament.sponsor %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @tournament.location %>
+</p>
+
+<p>
+  <b>Prizes:</b>
+  <%= @tournament.prizes %>
+</p>
+
+<p>
+  <b>Entry reqs:</b>
+  <%= @tournament.entry_reqs %>
+</p>
+
+<p>
+  <b>Format:</b>
+  <%= @tournament.format %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @tournament.status %>
+</p>
+
+<p>
+  <b>Links:</b>
+  <%= @tournament.links %>
+</p>
+
+
+<%= link_to 'Edit', edit_tournament_path(@tournament) %> |
+<%= link_to 'Back', tournaments_path %>
