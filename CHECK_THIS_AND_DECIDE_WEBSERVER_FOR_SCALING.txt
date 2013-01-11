@@ -1,0 +1,3 @@
+Thin uses EventMachine, Unicorn uses forks, Puma uses threads. They all go behind a reverse proxy like Nginx for load balancing.
+
+look at each of these

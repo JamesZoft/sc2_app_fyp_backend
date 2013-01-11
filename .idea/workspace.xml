@@ -50,7 +50,9 @@
         <entry file="file://$PROJECT_DIR$/app/views/tournaments/index.xml.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="54" selection-start="104" selection-end="104" vertical-scroll-proportion="-1.25">
-              <folding />
+              <folding>
+                <marker date="1353863639000" expanded="true" signature="48:127" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,7 +88,9 @@
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="15" column="0" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <marker date="1353858871000" expanded="true" signature="791:1351" placeholder="do ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -629,7 +633,9 @@
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1353858871000" expanded="true" signature="791:1351" placeholder="do ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -664,7 +670,9 @@
     <entry file="file://$PROJECT_DIR$/app/views/tournaments/index.xml.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="54" selection-start="104" selection-end="104" vertical-scroll-proportion="-1.25">
-          <folding />
+          <folding>
+            <marker date="1353863639000" expanded="true" signature="48:127" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
