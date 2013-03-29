@@ -11,7 +11,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130329143033) do
 
   create_table "matches", :force => true do |t|
@@ -24,9 +23,6 @@ ActiveRecord::Schema.define(:version => 20130329143033) do
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
-=======
-ActiveRecord::Schema.define(:version => 20121125152905) do
->>>>>>> f6972627193d47708b490244c17e08476b87a05c
 
   create_table "tournament_requests", :force => true do |t|
     t.integer  "tourny_id"
@@ -46,13 +42,10 @@ ActiveRecord::Schema.define(:version => 20121125152905) do
     t.string   "links"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-<<<<<<< HEAD
     t.boolean  "subscribed"
     t.boolean  "ongoing"
     t.boolean  "past"
     t.boolean  "future"
-=======
->>>>>>> f6972627193d47708b490244c17e08476b87a05c
   end
 
 end

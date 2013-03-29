@@ -1,6 +1,6 @@
 FinalYearProject::Application.routes.draw do
   resources :tournaments
-
+  resources :matches
   resources :tournaments_controller
 
 
