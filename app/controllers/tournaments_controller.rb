@@ -44,50 +44,50 @@ class TournamentsController < ApplicationController
 
   # POST /tournaments
   # POST /tournaments.json
-  def create
-    @tournament = Tournament.new(params[:tournament].except :xmlns)
-
-    respond_to do |format|
-      if @tournament.save
-        #format.html { redirect_to @tournament, notice: 'Tournament was successfully created.' }
-        format.json { render json: @tournament, status: :created, location: @tournament }
-        format.xml  { render xml: @tournament, status: :created, location: @tournament }
-      else
-        #format.html { render action: "new" }
-        format.json { render json: @tournament.errors, status: :unprocessable_entity }
-        format.xml  { render xml: @tournament.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+#  def create
+#    @tournament = Tournament.new(params[:tournament].except :xmlns)
+#
+#    respond_to do |format|
+#      if @tournament.save
+#        #format.html { redirect_to @tournament, notice: 'Tournament was successfully created.' }
+#        format.json { render json: @tournament, status: :created, location: @tournament }
+#        format.xml  { render xml: @tournament, status: :created, location: @tournament }
+#      else
+#        #format.html { render action: "new" }
+#        format.json { render json: @tournament.errors, status: :unprocessable_entity }
+#        format.xml  { render xml: @tournament.errors, status: :unprocessable_entity }
+#      end
+#    end
+#  end
 
   # PUT /tournaments/1
   # PUT /tournaments/1.json
-  def update
-    @tournament = Tournament.find(params[:id])
-
-    respond_to do |format|
-      if @tournament.update_attributes(params[:tournament])
-        #format.html { redirect_to @tournament, notice: 'Tournament was successfully updated.' }
-        format.json { head :no_content }
-        format.xml  { head :no_content}
-      else
-        #format.html { render action: "edit" }
-        format.json { render json: @tournament.errors, status: :unprocessable_entity }
-        format.xml  {render xml: @tournament.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+#  def update
+#    @tournament = Tournament.find(params[:id])
+#
+#    respond_to do |format|
+#      if @tournament.update_attributes(params[:tournament])
+#        #format.html { redirect_to @tournament, notice: 'Tournament was successfully updated.' }
+#        format.json { head :no_content }
+#        format.xml  { head :no_content}
+#      else
+#        #format.html { render action: "edit" }
+#        format.json { render json: @tournament.errors, status: :unprocessable_entity }
+#        format.xml  {render xml: @tournament.errors, status: :unprocessable_entity }
+#      end
+#    end
+#  end
 
   # DELETE /tournaments/1
   # DELETE /tournaments/1.json
-  def destroy
-    @tournament = Tournament.find(params[:id])
-    @tournament.destroy
-
-    respond_to do |format|
-      #format.html { redirect_to tournaments_url }
-      format.json { head :no_content }
-      format.xml  {head :no_content }
-    end
-  end
+#  def destroy
+#    @tournament = Tournament.find(params[:id])
+#    @tournament.destroy
+#
+#    respond_to do |format|
+#      #format.html { redirect_to tournaments_url }
+#      format.json { head :no_content }
+#      format.xml  {head :no_content }
+#    end
+#  end
 end

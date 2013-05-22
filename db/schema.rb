@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130329143033) do
+ActiveRecord::Schema.define(:version => 20130330142110) do
 
   create_table "matches", :force => true do |t|
     t.date     "date"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20130329143033) do
     t.string   "links"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.string   "status"
   end
 
   create_table "tournament_requests", :force => true do |t|

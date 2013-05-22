@@ -39,45 +39,45 @@ class MatchesController < ApplicationController
 
   # POST /matches
   # POST /matches.json
-  def create
-    @match = Match.new(params[:match])
+#  def create
+ #   @match = Match.new(params[:match])
 
-    respond_to do |format|
-      if @match.save
-        format.html { redirect_to @match, notice: 'Match was successfully created.' }
-        format.json { render json: @match, status: :created, location: @match }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @match.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  #  respond_to do |format|
+   #   if @match.save
+    #    format.html { redirect_to @match, notice: 'Match was successfully created.' }
+     #   format.json { render json: @match, status: :created, location: @match }
+     # else
+     #   format.html { render action: "new" }
+     #   format.json { render json: @match.errors, status: :unprocessable_entity }
+     # end
+   # end
+ # end
 
   # PUT /matches/1
   # PUT /matches/1.json
-  def update
-    @match = Match.find(params[:id])
+ # def update
+  #  @match = Match.find(params[:id])
 
-    respond_to do |format|
-      if @match.update_attributes(params[:match])
-        format.html { redirect_to @match, notice: 'Match was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @match.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+#    respond_to do |format|
+#      if @match.update_attributes(params[:match])
+#        format.html { redirect_to @match, notice: 'Match was successfully updated.' }
+#        format.json { head :no_content }
+#      else
+#        format.html { render action: "edit" }
+#        format.json { render json: @match.errors, status: :unprocessable_entity }
+#      end
+#    end
+#  end
 
-  # DELETE /matches/1
-  # DELETE /matches/1.json
-  def destroy
-    @match = Match.find(params[:id])
-    @match.destroy
-
-    respond_to do |format|
-      format.html { redirect_to matches_url }
-      format.json { head :no_content }
-    end
-  end
+#  # DELETE /matches/1
+#  # DELETE /matches/1.json
+#  def destroy
+#    @match = Match.find(params[:id])
+#    @match.destroy
+#
+#    respond_to do |format|
+#      format.html { redirect_to matches_url }
+#      format.json { head :no_content }
+#    end
+#  end
 end
